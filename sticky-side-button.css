@@ -1,0 +1,33 @@
+// JS Snippet for Sticky Side Button on WP Site
+/*------ STICKY BUTTON RIGHT (Desktop only) -------*/
+/*This places the button where we want it*/
+@media (min-width:980px) {
+	#ds-sticky-button {
+    position: fixed;
+    right: -198px!important; /*Positions the button to the right of the page*/
+    top: 200px; /*Sets the distance of the button from the top of page*/
+    width: 200px !important; /*Sets dimensions of the button*/
+    height: 25px !important; /*Sets dimensions of the button*/
+    z-index:99999; /*Keeps the button on top*/
+    transform: rotate(90deg); /*Rotates the button*/
+    transform-origin: left top 0; /*Places the button after rotation*/
+    }
+    /*Styles the link text to make it look like a button - You can edit all these values to match your design*/
+    #ds-sticky-button a {
+      -webkit-border-radius: 0px 0px 4px 4px !important;
+      -moz-border-radius: 0px 0px 4px 4px !important;
+      border-radius: 0px 0px 4px 4px !important;
+      border: 0px solid #fff;
+      color: #ffffff;
+	  font-family: lato;
+      font-size: 18px;
+      background: #2359DF;
+      padding: 10px 15px 10px 15px;
+      text-decoration: none;
+    }
+    /*Styles the button on hover - You can edit all these values to match your design*/
+    #ds-sticky-button a:hover {
+      background: #1250cc;
+      text-decoration: none;
+	}
+}
